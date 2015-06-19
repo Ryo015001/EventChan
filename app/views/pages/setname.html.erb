@@ -1,12 +1,11 @@
-<h1>Pages#setname</h1>
-<p>Find me in app/views/pages/setname.html.erb</p>
+<h2>名前の登録</h2>
 <%= form_for @user, url: {action: 'update'}  do |f| %>
 <div class="field">
-  <%= f.label :こんにちは %><br>
+  <%= f.label :なまえを記入してください %><br>
   <%= f.text_field :username %>
   さん
   </div>
 <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :OK%>
   </div>
 <% end %>
