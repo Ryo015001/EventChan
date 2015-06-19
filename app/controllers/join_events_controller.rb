@@ -24,7 +24,7 @@ class JoinEventsController < ApplicationController
 
   def create
     @join_event = JoinEvent.new(join_event_params) 
-    @join_event.event_id = 
+    @join_event.event_id = params[:event_id]
     @join_event.save
     respond_with(@join_event)
   end
